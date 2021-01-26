@@ -5,7 +5,7 @@
     font-family: sans-serif;
 }
 .container {
-    background: #3e424259;
+    background: #09363659;
     width: 100%;
     padding: 10px;
     display: flex;
@@ -20,7 +20,7 @@ ul {
     margin-right: 70px;
 }
 ul li {
-    padding: 10px;
+    padding: 15px;
 }
 ul li a{
     color: white;
@@ -36,6 +36,13 @@ ul li a{
     margin: auto;
     display: flex;
     justify-content: space-between;
+}
+.container ul li a:hover {
+    font-weight: bolder;
+    color: red;
+}
+.container h1:hover {
+    color: red;
 }
 .image {
     width: 45%;
@@ -79,7 +86,7 @@ img {
     border-radius: 10px;
 }
 .fa-instagram {
-    background: orange;
+    background: linear-gradient( red, yellow, orange);
     color: red;
     border-radius: 10px;
 }
@@ -92,4 +99,34 @@ img {
     background: white;
     color: red;
     border-radius: 10px;
+}
+.text {
+    width: 55%;
+    margin-top: 100px;
+    padding: 10px;
+}
+.text h1 {
+    font-size: 78px;
+}
+.text p {
+    font-weight:530;
+    margin-top: 20px;
+}
+.text button {
+    margin-right: 5px;
+    margin-left: 5px;
+    width: 15%;
+    padding: 10px;
+    margin-top: 40px;
+    outline: none;
+    border-radius: 30px;
+    background: blue;
+    color: white;
+    border: none;
+    box-shadow: 1px 1px 3px 3px lightskyblue;
+    cursor: pointer;
+}
+.button p {
+    margin-top: 60px;
+    line-height: 20pt;
 }
