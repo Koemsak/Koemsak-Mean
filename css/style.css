@@ -4,14 +4,15 @@
     margin: 0;
     font-family: sans-serif;
 }
+body {
+    background: #d1eafa49;
+}
 .container {
-    background: teal;
+    background: #868b8baf;
     width: 100%;
     padding: 10px;
     display: flex;
     justify-content: space-between;
-    position: sticky;
-    top: 0;
 }
 ul {
     list-style: none;
@@ -23,7 +24,7 @@ ul li {
     padding: 15px;
 }
 ul li a{
-    color: black;
+    color: white;
     text-decoration: none;
     text-transform: uppercase;
 }
@@ -31,6 +32,8 @@ ul li a{
     color: white;
     margin-left: 30px;
     cursor: pointer;
+    display: flex;
+    align-items: center;
 }
 .content {
     width: 95%;
@@ -41,8 +44,17 @@ ul li a{
 .container ul li a:hover {
     font-weight: bolder;
 }
-.container h1:hover {
-    color: red;
+.home {
+    color: blue;
+    font-weight: bolder;
+}
+.resume {
+    color: blue;
+    font-weight: bolder;
+}
+.contact {
+    color: blue;
+    font-weight: bolder;
 }
 .image {
     width: 45%;
@@ -102,6 +114,11 @@ img {
     color: red;
     border-radius: 10px;
 }
+.fa-skype {
+    background: #0bb8f1;
+    color: white;
+    border-radius: 10px;
+}
 .text {
     width: 55%;
     margin-top: 100px;
@@ -117,7 +134,7 @@ img {
     font-weight:530;
     margin-top: 20px;
 }
-.text button{
+.text a{
     margin-right: 5px;
     margin-left: 5px;
     width: 15%;
@@ -130,6 +147,8 @@ img {
     box-shadow: 1px 1px 3px 3px lightskyblue;
     cursor: pointer;
     color: white;
+    text-align: center;
+    text-decoration: none;
 }
 
 .button p {
@@ -199,7 +218,7 @@ span {
     flex-direction: column;
     padding: 10px;
 }
-img {
+.data img {
     border-radius: 50%;
     width: 40%;
     height: 30vh;
@@ -259,14 +278,12 @@ img {
     color: white;
     text-decoration: none;
 }
+/* Add animation text */
+.animate__animated.animate__fadeInLeft,
+.animate__animated.animate__bounce {
+    --animate-duration: 2s;
+}
 
-/* .icons {
-    width: 50%;
-    background: blue;
-
-    padding: 10px;
-    margin: auto;
-} */
 footer {
     background: #000;
     padding: 40px;
@@ -277,23 +294,97 @@ footer {
 .text-right {
     display: flex;
     justify-content: space-between;
+    width: 100%;
 
 }
 .text-name {
     width: 30%;
     color: #807676ce;
-    /* display: flex;
-    align-items: center; */
 }
 .text-icon {
     width: 30%;
     color: white;
-    /* display: flex;
-    justify-content: flex-end; */
     
 }
 .footer-icon {
     width: 30%;
+}
+
+
+.body-content {
+    
     display: flex;
-    justify-content: flex-end;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 90%;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+.location {
+    background: #b6b5b58c;
+    padding: 20px;
+    width: 48%;
+    box-sizing: border-box;
+    border-radius: 5px;
+    box-shadow: -1px 1px 3px 3px white;
+}
+.location h1 {
+    margin-bottom: 10px;
+    color: black;
+    text-align: center;
+    font-family: cursive;
+}
+iframe {
+    width: 100%;
+    height: 300px;
+    border-radius: 5px;
+}
+.form-content {
+    width: 48%;
+    background: #b6b5b58c;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 3px 3px white;
+}
+.form-content h3 {
+
+    text-align: center;
+    margin: 10px;
+}
+input[type="text"] {
+    width: 49%;
+    box-sizing: border-box;
+    padding: 10px;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+}
+input[type="email"] {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+}
+textarea {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+}
+input[type="submit"],
+input[type="reset"] {
+    width: 25%;
+    box-sizing: border-box;
+    padding: 10px;
+    outline: none;
+    border: none;
+    border-radius: 15px;
+    background: blue;
+    color: white;
+    cursor: pointer;
 }
