@@ -5,7 +5,8 @@
     font-family: sans-serif;
 }
 body {
-    background: #d1eafa49;
+    background: linear-gradient(to right, lightskyblue, lightgreen);
+    overflow-x: hidden;
 }
 .container {
     background: #868b8baf;
@@ -56,10 +57,14 @@ ul li a{
     color: blue;
     font-weight: bolder;
 }
+.school {
+    color: blue;
+    font-weight: bolder;
+}
 .image {
     width: 45%;
     margin-bottom: 50px;
-    margin-top: 40px;
+    margin-top: 120px;
     
 }
 .box-img {
@@ -208,6 +213,8 @@ span {
     display: flex;
     justify-content: flex-end;
 }
+
+/* This is the resume page style */
 .personal-cv {
     display: flex;
     justify-content: space-between;
@@ -231,8 +238,6 @@ span {
 }
 .cv {
     width: 70%;
-    /* background: #6666669d; */
-    /* margin-top: 20px; */
     border-top-left-radius: 40px;
     box-shadow: -5px 5px 5px ;
     padding: 15px;
@@ -240,7 +245,6 @@ span {
 .cv h2 {
     color: black;
     margin-top: 50px;
-    font-family: 'Times New Roman', Times, serif;
 }
 .card {
     display: flex;
@@ -250,7 +254,7 @@ span {
 .education,
 .experience,
 .hobbies {
-    background: #f8e0e071;
+    /* background: #f7f3f371; */
     width: 30%;
     margin-top: 50px;
     padding: 10px;
@@ -259,7 +263,7 @@ span {
 .education li,
 .experience li,
 .hobbies li {
-    color: cornflowerblue;
+    color: black;
 }
 .down {
     display: flex;
@@ -279,7 +283,7 @@ span {
     text-decoration: none;
 }
 /* Add animation text */
-.animate__animated.animate__fadeInLeft,
+.animate__animated.animate__fadeInRight,
 .animate__animated.animate__bounce {
     --animate-duration: 2s;
 }
@@ -310,7 +314,7 @@ footer {
     width: 30%;
 }
 
-
+/* This is the contact page style */
 .body-content {
     
     display: flex;
@@ -322,12 +326,11 @@ footer {
     margin-bottom: 100px;
 }
 .location {
-    background: #b6b5b58c;
+    background: #fcf7f78c;
     padding: 20px;
     width: 48%;
     box-sizing: border-box;
     border-radius: 5px;
-    box-shadow: -1px 1px 3px 3px white;
 }
 .location h1 {
     margin-bottom: 10px;
@@ -342,10 +345,9 @@ iframe {
 }
 .form-content {
     width: 48%;
-    background: #b6b5b58c;
+    background: #fcf7f78c;
     padding: 20px;
     border-radius: 5px;
-    box-shadow: 1px 1px 3px 3px white;
 }
 .form-content h3 {
 
@@ -387,4 +389,37 @@ input[type="reset"] {
     background: blue;
     color: white;
     cursor: pointer;
+}
+
+/* This is School pages style*/
+
+.school-img {
+    width: 80%;
+    padding: 40px;
+    margin: auto;
+
+}
+.school-img h1 {
+    margin-bottom: 20px;
+    font-weight: normal;
+}
+.school-img img {
+    width: 100%;
+    box-sizing: border-box;
+
+}
+.two-img {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+.img1 {
+    width: 49%;
+}
+.img2 {
+    width: 49%;
+}
+.school-text {
+    margin-top: 40px;
+    line-height: 1.5;
 }
