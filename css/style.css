@@ -7,13 +7,20 @@
 body {
     background: linear-gradient(to right, #51c2d5, #f7f7e8);
     overflow-x: hidden;
-
 }
 .container {
     background: #16c79a;
     padding: 10px;
     display: flex;
     justify-content: space-between;
+    position: sticky;
+    top: 0;
+    z-index: 99999;
+}
+.container 
+.menu {
+    font-size: 25px;
+    display: none;
 }
 ul {
     list-style: none;
@@ -311,7 +318,8 @@ span {
 /* Add animation text */
 .animate__animated.animate__bounce,
 .animate__animated.animate__fadeInRight,
-.animate__animated.animate__fadeInLeft {
+.animate__animated.animate__fadeInLeft,
+.animate__animated.animate__bounceInRight {
     --animate-duration: 3s;
 }
 
@@ -325,8 +333,10 @@ footer {
     justify-content: space-between;
     width: 100%;
 }
-.text-name pre {
+.text-name {
     width: 50%;
+}
+.text-name pre {
     color: #f7f7e8;
     font-size: 12px;
     line-height: normal;
@@ -411,7 +421,7 @@ input[type="reset"] {
     border-radius: 15px;
     color: black;
     cursor: pointer;
-    box-shadow: 0 0 1px 1px;
+    box-shadow: 0 0 1px 1px #00000088;
     background: none;
 }
 
@@ -450,12 +460,92 @@ input[type="reset"] {
 
 /* Create responsive */
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1120px){
     body {
         margin: 0;
         padding: 0;
     }
-/* Create responsive for navbar all page */
+
+/* Create responsive for Resume page */
+    .personal-cv {
+        display: flex;
+        flex-direction: column;
+    }
+    .data {
+        width: 90%;
+        margin: auto;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        border-radius: 15px;
+        box-shadow: 0 0 5px;
+    }
+    .data img {
+        width: 30%;
+        height: 40vh;
+    }
+    .cv {
+        width: 97%;
+        padding: 10px;
+        box-shadow: none;
+    }
+    .card {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        margin-top: 0;
+    }
+    .education {
+        width: 46%;
+    }
+    .experience {
+        width: 46%;
+    }
+    .hobbies {
+        width: 100%;
+        margin-top: 20px;
+    }
+/* Create responsive for school page */
+    .school-img h1 {
+        font-size: 28px;
+    }
+    .school-img img {
+        height: 50vh;
+    }
+    .two-img {
+        display: flex;
+        flex-direction: column;
+    }
+    .img1 {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .img2 {
+        width: 100%;
+    }
+    .img1 img,
+    .img2 img {
+        height: 60vh;
+    }
+/* Create responsive for contact page */
+    .body-content {
+        padding: 30px;
+        width: 90%;
+        margin: auto;
+    }
+    .location {
+        width: 100%;
+        box-sizing: border-box;
+        margin-bottom: 30px;
+        box-shadow: 0 0 10px 1px #0000005d;
+    }
+    .form-content {
+        width: 100%;
+        box-sizing: border-box;
+        box-shadow: 0 0 10px 1px #0000005d;
+    }
+}
+@media screen and (max-width: 768px) {
+    /* Create responsive for navbar all page */
     .container {
         display: flex;
         flex-direction: column;
@@ -472,13 +562,10 @@ input[type="reset"] {
         flex-direction: column;
         text-align: center;
     }
-/* Create responsive for footer */
-    .text-right {
-        display: flex;
-        flex-direction: column;
-    }
-    .footer-icon {
-        justify-content: flex-start;
+    .container .menu{
+        display: block;
+        width: 100px;
+        text-align: center;
     }
 /* Create responsive for home page */
     .content {
@@ -509,44 +596,24 @@ input[type="reset"] {
         margin-top: 0%;
         text-align: center;
     }
-/* Create responsive for Resume page */
-    .personal-cv {
+    .image img {
+        height: 90vh;
+    }
+/* Create responsive for footer */
+    .text-right {
         display: flex;
         flex-direction: column;
     }
-    .data {
-        width: 90%;
-        margin: auto;
-        margin-top: 10px;
-        margin-bottom: 10px;
-        border-radius: 15px;
-        box-shadow: 0 0 5px;
-    }
-    .data img {
-        height: 55vh;
-    }
-    .cv {
-        width: 97%;
-        padding: 10px;
-        box-shadow: none;
-    }
-    .card {
-        display: flex;
-        flex-wrap: wrap;
-        width: 100%;
-        margin-top: 0;
-    }
-    .education {
-        width: 46%;
-    }
-    .experience {
-        width: 46%;
-    }
-    .hobbies {
-        width: 100%;
-        margin-top: 20px;
+    .footer-icon {
+        justify-content: flex-start;
     }
 /* Create responsive for school page */
+    .school-img h1 {
+        font-size: 28px;
+    }
+    .school-img img {
+        height: 40vh;
+    }
     .two-img {
         display: flex;
         flex-direction: column;
@@ -558,25 +625,12 @@ input[type="reset"] {
     .img2 {
         width: 100%;
     }
-/* Create responsive for school page */
-    .body-content {
-        padding: 30px;
-        width: 90%;
-        margin: auto;
-    }
-    .location {
-        width: 100%;
-        box-sizing: border-box;
-        margin-bottom: 30px;
-        box-shadow: 0 0 10px 1px #0000005d;
-    }
-    .form-content {
-        width: 100%;
-        box-sizing: border-box;
-        box-shadow: 0 0 10px 1px #0000005d;
+    .img1 img,
+    .img2 img {
+        height: 50vh;
     }
 }
-@media screen and (min-width: 500px) and (max-width: 700px){
+@media screen and (min-width: 100px) and (max-width: 600px){
     .footer-icon {
         display: flex;
         flex-direction: column;
@@ -586,9 +640,47 @@ input[type="reset"] {
         margin-top: 20px;
     }
     .button button {
-        /* margin: 10px; */
         padding: 10px 20%;
         box-sizing: border-box;
-
+    }
+/* Create responsive for resume page */
+    .data img {
+        height: 30vh;
+    }
+    .education {
+        width: 100%;
+    }
+    .experience {
+        width: 100%;
+        margin-top: 20px;
+    }
+/* Create responsive for school page */
+    .school-img h1 {
+        font-size: 20px;
+    }
+    .school-img img {
+        height: 30vh;
+    }
+    .img1 img,
+    .img2 img {
+        height: 35vh;
+    }
+/* Create responsive for contact page */
+    .location iframe {
+        height: 200px;
+    }
+    textarea {
+        height: 15vh;
+    }
+    input[type="text"] {
+        width: 100%;
+        margin-top: 17px;
+    }
+    input[type="submit"],
+    input[type="reset"] {
+        width: 100%;
+    }
+    input[type="reset"] {
+        margin-top: 17px;
     }
 }
