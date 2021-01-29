@@ -5,8 +5,9 @@
     font-family: sans-serif;
 }
 body {
-    background: linear-gradient(to right, #f7f7e8, #51c2d5);
+    background: linear-gradient(to right, #51c2d5, #f7f7e8);
     overflow-x: hidden;
+
 }
 .container {
     background: #16c79a;
@@ -35,6 +36,7 @@ ul li a{
     display: flex;
     align-items: center;
 }
+/* Home page */
 .content {
     width: 95%;
     margin: auto;
@@ -102,8 +104,6 @@ img {
     background: blue;
     color: white;
     border-radius: 10px;
-    width: 40%;
-    text-align: center;
 }
 .fa-instagram {
     background: linear-gradient( orange, red, yellow);
@@ -148,9 +148,7 @@ img {
 .button {
     margin-top: 40px;
     color: black;
-    width: 30%;
     display: flex;
-    
 }
 .button button {
     box-shadow: 0 0 5px 1px black;
@@ -314,25 +312,19 @@ span {
 .animate__animated.animate__bounce,
 .animate__animated.animate__fadeInRight,
 .animate__animated.animate__fadeInLeft {
-    --animate-duration: 2s;
+    --animate-duration: 3s;
 }
 
 
 footer {
     background: #23689b;
     padding: 40px;
-    line-height: 40pt;
-}
-footer p {
-    text-align: center;
 }
 .text-right {
     display: flex;
     justify-content: space-between;
     width: 100%;
-
 }
-
 .text-name pre {
     width: 50%;
     color: #f7f7e8;
@@ -340,8 +332,9 @@ footer p {
     line-height: normal;
 }
 .footer-icon {
+    display: flex;
     width: 50%;
-    text-align: end;
+    justify-content: flex-end;
 }
 
 /* This is the contact page style */
@@ -416,9 +409,10 @@ input[type="reset"] {
     outline: none;
     border: none;
     border-radius: 15px;
-    background: blue;
-    color: white;
+    color: black;
     cursor: pointer;
+    box-shadow: 0 0 1px 1px;
+    background: none;
 }
 
 /* This is School pages style*/
@@ -452,4 +446,149 @@ input[type="reset"] {
 .school-text {
     margin-top: 40px;
     line-height: 1.5;
+}
+
+/* Create responsive */
+
+@media screen and (max-width: 768px) {
+    body {
+        margin: 0;
+        padding: 0;
+    }
+/* Create responsive for navbar all page */
+    .container {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        position: none;
+    }
+    .container h1 {
+        margin: 0;
+        margin: auto;
+    }
+    .container ul {
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+/* Create responsive for footer */
+    .text-right {
+        display: flex;
+        flex-direction: column;
+    }
+    .footer-icon {
+        justify-content: flex-start;
+    }
+/* Create responsive for home page */
+    .content {
+        display: flex;
+        flex-direction: column;
+    }
+    .text {
+        width: 100%;
+        text-align: center;
+    }
+    .text h1 {
+        font-size: 48px;
+    }
+    .button {
+        width: 50%;
+        margin-top: 50px;
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+    }
+    .button button {
+        margin: 10px;
+        padding: 10px 40%;
+        box-sizing: border-box;
+    }
+    .image {
+        width: 100%;
+        margin-top: 0%;
+        text-align: center;
+    }
+/* Create responsive for Resume page */
+    .personal-cv {
+        display: flex;
+        flex-direction: column;
+    }
+    .data {
+        width: 90%;
+        margin: auto;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        border-radius: 15px;
+        box-shadow: 0 0 5px;
+    }
+    .data img {
+        height: 55vh;
+    }
+    .cv {
+        width: 97%;
+        padding: 10px;
+        box-shadow: none;
+    }
+    .card {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        margin-top: 0;
+    }
+    .education {
+        width: 46%;
+    }
+    .experience {
+        width: 46%;
+    }
+    .hobbies {
+        width: 100%;
+        margin-top: 20px;
+    }
+/* Create responsive for school page */
+    .two-img {
+        display: flex;
+        flex-direction: column;
+    }
+    .img1 {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .img2 {
+        width: 100%;
+    }
+/* Create responsive for school page */
+    .body-content {
+        padding: 30px;
+        width: 90%;
+        margin: auto;
+    }
+    .location {
+        width: 100%;
+        box-sizing: border-box;
+        margin-bottom: 30px;
+        box-shadow: 0 0 10px 1px #0000005d;
+    }
+    .form-content {
+        width: 100%;
+        box-sizing: border-box;
+        box-shadow: 0 0 10px 1px #0000005d;
+    }
+}
+@media screen and (min-width: 500px) and (max-width: 700px){
+    .footer-icon {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .fa {
+        margin-top: 20px;
+    }
+    .button button {
+        /* margin: 10px; */
+        padding: 10px 20%;
+        box-sizing: border-box;
+
+    }
 }
