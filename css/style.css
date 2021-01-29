@@ -15,12 +15,7 @@ body {
     justify-content: space-between;
     position: sticky;
     top: 0;
-    z-index: 99999;
-}
-.container 
-.menu {
-    font-size: 25px;
-    display: none;
+    z-index: 99;
 }
 ul {
     list-style: none;
@@ -103,7 +98,7 @@ img {
     text-align: center;
 }
 .fa {
-    padding: 10px;
+    padding: 8px;
     margin-left: 5px;
     margin-right: 5px;
 }
@@ -369,7 +364,7 @@ footer {
     margin-bottom: 10px;
     color: black;
     text-align: center;
-    font-family: cursive;
+    font-size: 24px;
 }
 iframe {
     width: 100%;
@@ -630,7 +625,7 @@ input[type="reset"] {
         height: 50vh;
     }
 }
-@media screen and (min-width: 100px) and (max-width: 600px){
+@media screen and (min-width: 100px) and (max-width: 600px) and (orientation: portrait){
     .footer-icon {
         display: flex;
         flex-direction: column;
