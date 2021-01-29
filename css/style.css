@@ -7,9 +7,11 @@
 body {
     background: linear-gradient(to right, #51c2d5, #f7f7e8);
     overflow-x: hidden;
+    margin: 0;
+    padding: 0;
 }
 .container {
-    background: #16c79a;
+    background: #75cfb8;
     padding: 10px;
     display: flex;
     justify-content: space-between;
@@ -157,7 +159,7 @@ img {
     display: flex;
 }
 .button button {
-    box-shadow: 0 0 5px 1px black;
+    box-shadow: 0 0 5px 1px #00000071;
     padding: 10px 20px;
     margin-right: 10px;
     margin-left: 10px;
@@ -463,7 +465,6 @@ input[type="reset"] {
     body {
         margin: 0;
         padding: 0;
-        overflow-x: hidden;
     }
 
 /* Create responsive for Resume page */
@@ -545,9 +546,6 @@ input[type="reset"] {
     }
 }
 @media screen and (max-width: 768px) {
-    body {
-        overflow-x: hidden;
-    }
     /* Create responsive for navbar all page */
     .container {
         display: flex;
@@ -601,7 +599,7 @@ input[type="reset"] {
         text-align: center;
     }
     .image img {
-        height: 90vh;
+        height: 70vh;
     }
 /* Resume page */
     .data img {
@@ -640,9 +638,6 @@ input[type="reset"] {
     }
 }
 @media screen and (min-width: 10px) and (max-width: 600px) and (orientation: portrait){
-    body {
-        overflow-x: hidden;
-    }
     .footer-icon {
         display: flex;
         flex-direction: column;
