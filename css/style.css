@@ -640,7 +640,7 @@ input[type="reset"] {
     }
 /* Create responsive for resume page */
     .data img {
-        height: 30vh;
+        height: 20vh;
     }
     .education {
         width: 100%;
@@ -679,7 +679,7 @@ input[type="reset"] {
         margin-top: 17px;
     }
 /* Hoem page */
-.image img {
-    height: 40vh;
-}
+    .image img {
+        height: 40vh;
+    }
 }
